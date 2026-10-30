@@ -20,7 +20,7 @@
 <main>
   <section>
     <h1>Gizlilik Politikası</h1>
-    <p class="tarih">Son güncelleme: 29 Ekim 2026</p>
+    <p class="tarih">Son güncelleme: 30 Ekim 2026</p>
 
     <h2>1. Kapsam</h2>
     <p>Bu politika, Milesia YouTube kanalının yapımında kullanılan “Milesia n8n” otomasyon
@@ -44,25 +44,29 @@
     Telegram'dan tek tek onayladığı videoları, kapaklarını ve altyazılarını yüklemek ve yayın zamanını ayarlamak;
     aynı videonun iki kez yüklenmemesi için kanaldaki video başlıklarını ve yayın durumlarını okumak; onaylanmış
     bir video sonradan değiştirilip yeniden onaylandığında, uygulamanın kendi yüklediği ve henüz yayınlanmamış eski
-    kopyayı silmek. Uygulama yorumlara, abonelere, izlenme verilerine ya da başka kanallara erişmez. Okunan video
-    kimlikleri, başlıkları ve yayın durumları yalnızca kanal sahibinin bilgisayarında saklanır.</p>
+    kopyayı silmek; kanal sahibine günlük rapor göstermek için kanalın ve videolarının sayılarını (abone, izlenme,
+    beğeni ve yorum sayısı) okumak; kanalın videolarına gelen yorumları okuyup kanal sahibine Telegram'dan göstermek ve
+    kanal sahibinin her biri için ayrıca onayladığı cevabı o yoruma göndermek. Kanal sahibinin onayı olmadan hiçbir
+    yorum gönderilmez. Uygulama başka kanallara erişmez. Okunan veriler yalnızca kanal sahibinin bilgisayarında saklanır.</p>
     <p>Uygulamayı kullanan kişi <a href="https://www.youtube.com/t/terms">YouTube Hizmet Şartları</a>'na bağlı
     olmayı kabul eder. Google'ın verileri nasıl işlediği
     <a href="http://www.google.com/policies/privacy">Google Gizlilik Politikası</a>'nda anlatılır.</p>
 
     <h2>4. Instagram</h2>
     <p>Uygulama, kanalın kendi Instagram profesyonel hesabına (milesia.tr) Meta'nın Instagram API'si ile
-    bağlanır ve yalnızca iki izin kullanır: <code>instagram_business_basic</code> (hesap adı ve kimliği) ve
-    <code>instagram_business_content_publish</code> (kanal sahibinin onayladığı Reels videolarını yayınlama).
-    Başka kişilerin verilerine, mesajlara ya da yorumlara erişilmez. Erişim anahtarı yalnızca kanal sahibinin
-    bilgisayarında saklanır.</p>
+    bağlanır ve şu izinleri kullanır: <code>instagram_business_basic</code> (hesap adı ve kimliği, Reels
+    videolarının sayıları ve bu videolara gelen yorumlar), <code>instagram_business_content_publish</code> (kanal
+    sahibinin onayladığı Reels videolarını yayınlama) ve <code>instagram_business_manage_comments</code> (kanal
+    sahibinin her biri için ayrıca onayladığı cevabı bir yoruma yazma). Mesajlara ve başka hesaplara erişilmez.
+    Erişim anahtarı yalnızca kanal sahibinin bilgisayarında saklanır.</p>
     <p>Instagram videoyu yalnızca bir internet adresinden alabildiği için her Reels, yayından birkaç dakika önce
     uygulamanın kendi Drive klasörüne yüklenir, bağlantıya sahip olanların görebileceği şekilde paylaşılır ve
     yayından hemen sonra silinir. Videolara yapay zekâ ile üretildikleri belirtilerek yayınlanır.</p>
 
     <h2>5. Verilerin kullanımı</h2>
     <p>İndirilen paketler yalnızca Milesia videolarını üretmek için kullanılır. Yedekler, uygulamanın
-    ayarlarını kaybetmemek için saklanır. Google kullanıcı verileri reklam, profil çıkarma, satış ya da
+    ayarlarını kaybetmemek için saklanır. Video sayıları yalnızca kanal sahibine rapor göstermek, yorumlar yalnızca
+    kanal sahibine gösterilip cevaplanmak için kullanılır. Google kullanıcı verileri reklam, profil çıkarma, satış ya da
     başka bir amaçla kullanılmaz.</p>
 
     <h2>6. Saklama ve silme</h2>
@@ -70,17 +74,21 @@
     Google Drive erişim izni bilgisayardaki uygulamada şifreli olarak, YouTube erişim anahtarı ise yalnızca kanal sahibinin
     bilgisayarındaki bir ayar dosyasında tutulur. Uygulama çerez ya da benzeri bir izleme teknolojisi kullanmaz. Yayınlanan haftaların ara
     dosyaları 30 gün sonra silinir; bitmiş videolar saklanır. Drive'daki yedeklerin yalnızca son 8 tanesi
-    tutulur.</p>
+    tutulur. Yorumların metni ve yazan kişinin adı en fazla 30 gün saklanır; cevap kayıtlarında yalnızca yorumun
+    kimliği ve gönderilen cevap tutulur.</p>
 
     <h2>7. Paylaşım</h2>
     <p>Google kullanıcı verileri satılmaz ve reklam amacıyla kimseyle paylaşılmaz. Videoları üretmek için
     paketlerdeki metinler ve sahne açıklamaları görsel ve ses üreten yapay zekâ hizmetlerine
     (Cloudflare Workers AI ve Google Gemini API) gönderilir. Bu metinler kamuya yayınlanmak üzere
     hazırlanmış video içerikleridir ve kişisel veri içermez.</p>
-    <p>Seslendirme, Google Gemini API'nin ücretsiz katmanıyla yapılır. Bu katmanda Google, gönderilen
+    <p>Kanal sahibine yorum cevabı taslağı hazırlamak için YouTube ve Instagram'daki herkese açık bir yorumun metni,
+    videonun başlığıyla birlikte Google Gemini API'ye gönderilir. Yorumu yazan kişinin adı ve hesap bilgisi gönderilmez;
+    istek Gemini API'de saklanmaz. Taslak, kanal sahibi onaylamadıkça hiçbir yerde yayınlanmaz.</p>
+    <p>Seslendirme ve yorum taslakları Google Gemini API'nin ücretsiz katmanıyla yapılır. Bu katmanda Google, gönderilen
     metinleri ve üretilen sesleri kendi ürünlerini geliştirmek için kullanabilir ve bu içerikler insan
     değerlendiriciler tarafından okunabilir. Bu nedenle bu hizmete yalnızca kamuya yayınlanacak video
-    metinleri gönderilir; kişisel ya da gizli bilgi gönderilmez.</p>
+    metinleri ve zaten herkese açık olan yorum metinleri gönderilir; kişisel ya da gizli bilgi gönderilmez.</p>
 
     <h2>8. Verilere kimler erişir?</h2>
     <p>Verilere yalnızca kanal sahibi erişir.</p>
@@ -104,7 +112,7 @@
 
   <section id="en" lang="en">
     <h1>Privacy Policy</h1>
-    <p class="tarih">Last updated: 29 October 2026</p>
+    <p class="tarih">Last updated: 30 October 2026</p>
 
     <h2>1. Scope</h2>
     <p>This policy covers “Milesia n8n”, the automation app used to produce the Milesia YouTube channel.
@@ -128,25 +136,30 @@
     the channel owner has approved one by one via Telegram, and set their publishing time; read the titles and
     publishing status of the channel's videos so that the same video is not uploaded twice; and, when an approved
     video is later changed and approved again, delete the old copy that the app itself uploaded and that has not
-    been published yet. The app does not access comments, subscribers, analytics or other channels. The video IDs,
-    titles and publishing status it reads are stored only on the channel owner's computer.</p>
+    been published yet; read the counts of the channel and its videos (subscribers, views, likes and comment counts)
+    to show the channel owner a daily report; and read the comments on the channel's videos, show them to the channel
+    owner via Telegram, and post to a comment only the reply that the channel owner has separately approved for it.
+    No comment is posted without the channel owner's approval. The app does not access other channels. The data it
+    reads is stored only on the channel owner's computer.</p>
     <p>By using the app, users agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of
     Service</a>. How Google processes data is described in the
     <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
 
     <h2>4. Instagram</h2>
     <p>The app connects to the channel's own Instagram professional account (milesia.tr) with Meta's Instagram
-    API and uses only two permissions: <code>instagram_business_basic</code> (account name and ID) and
-    <code>instagram_business_content_publish</code> (publishing Reels approved by the channel owner). It does not
-    access other people's data, messages or comments. The access token is stored only on the channel owner's
-    computer.</p>
+    API and uses these permissions: <code>instagram_business_basic</code> (account name and ID, the counts of the
+    account's Reels and the comments on them), <code>instagram_business_content_publish</code> (publishing Reels
+    approved by the channel owner) and <code>instagram_business_manage_comments</code> (posting to a comment the reply
+    that the channel owner has separately approved for it). It does not access messages or other accounts. The access
+    token is stored only on the channel owner's computer.</p>
     <p>Because Instagram can only fetch a video from a web address, each Reel is uploaded to the app's own Drive
     folder a few minutes before publishing, shared with anyone who has the link, and deleted right after
     publishing. Videos are published with a label stating that they were made with AI.</p>
 
     <h2>5. How the data is used</h2>
     <p>Downloaded packages are used only to produce Milesia videos. Backups are kept so the app's
-    settings are not lost. Google user data is not used for advertising, profiling, sale or any
+    settings are not lost. Video counts are used only to show the channel owner a report, and comments only to
+    show them to the channel owner and reply to them. Google user data is not used for advertising, profiling, sale or any
     other purpose.</p>
 
     <h2>6. Storage and deletion</h2>
@@ -155,17 +168,21 @@
     stored only in a settings file on the channel owner's computer. The app does not use cookies or similar
     tracking technologies. Intermediate files of
     published weeks are deleted after 30 days; finished videos are kept. Only the latest 8 backups are
-    kept in Drive.</p>
+    kept in Drive. Comment texts and commenter names are kept for at most 30 days; the reply log keeps only the
+    comment ID and the reply that was posted.</p>
 
     <h2>7. Sharing</h2>
     <p>Google user data is not sold and is not shared with anyone for advertising. To produce the videos,
     the scripts and scene descriptions in the packages are sent to AI services that generate images and
     voice-over (Cloudflare Workers AI and the Google Gemini API). These texts are video content written
     for public release and contain no personal data.</p>
-    <p>Voice-over uses the free tier of the Google Gemini API. On this tier Google may use the submitted
+    <p>To draft a reply for the channel owner, the text of a public YouTube or Instagram comment is sent, together
+    with the video title, to the Google Gemini API. The commenter's name and account details are not sent, and the
+    request is not stored by the Gemini API. A draft is never published unless the channel owner approves it.</p>
+    <p>Voice-over and comment reply drafts use the free tier of the Google Gemini API. On this tier Google may use the submitted
     texts and generated audio to improve its products, and they may be read by human reviewers. For this
-    reason only video scripts intended for public release are sent to this service; no personal or
-    confidential information is sent.</p>
+    reason only video scripts intended for public release and comment texts that are already public are sent to
+    this service; no personal or confidential information is sent.</p>
 
     <h2>8. Who can access the data?</h2>
     <p>Only the channel owner.</p>
