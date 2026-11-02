@@ -20,7 +20,7 @@
 <main>
   <section>
     <h1>Gizlilik Politikası</h1>
-    <p class="tarih">Son güncelleme: 30 Ekim 2026</p>
+    <p class="tarih">Son güncelleme: 2 Kasım 2026</p>
 
     <h2>1. Kapsam</h2>
     <p>Bu politika, Milesia YouTube kanalının yapımında kullanılan “Milesia n8n” otomasyon
@@ -34,8 +34,9 @@
       <code>Milesia/paketler</code> klasöründeki <code>paket_haftaNN.json</code> adlı içerik paketlerini
       bulmak ve indirmek için kullanır; başka dosyaları açmaz.</li>
       <li><code>drive.file</code>: yalnızca uygulamanın kendi oluşturduğu klasör ve dosyaları
-      (<code>Milesia</code>, <code>Milesia/paketler</code>, <code>Milesia/yedek</code>, yedek dosyaları ve
-      Instagram'a yayın için konan geçici video kopyaları) oluşturma, paylaşma ve silme.</li>
+      (<code>Milesia</code>, <code>Milesia/paketler</code>, <code>Milesia/yedek</code>, yedek dosyaları,
+      Instagram'a yayın için konan geçici video kopyaları ve haftalık özet tablo <code>Milesia_Veri</code>)
+      oluşturma, düzenleme, paylaşma ve silme.</li>
     </ul>
 
     <h2>3. YouTube</h2>
@@ -47,7 +48,10 @@
     kopyayı silmek; kanal sahibine günlük rapor göstermek için kanalın ve videolarının sayılarını (abone, izlenme,
     beğeni ve yorum sayısı) okumak; kanalın videolarına gelen yorumları okuyup kanal sahibine Telegram'dan göstermek ve
     kanal sahibinin her biri için ayrıca onayladığı cevabı o yoruma göndermek. Kanal sahibinin onayı olmadan hiçbir
-    yorum gönderilmez. Uygulama başka kanallara erişmez. Okunan veriler yalnızca kanal sahibinin bilgisayarında saklanır.</p>
+    yorum gönderilmez. Ayrıca <code>yt-analytics.readonly</code> ve <code>youtube.readonly</code> izinleriyle
+    kanalın kendi istatistiklerini (izlenme, izlenme süresi, ortalama izleme süresi, kazanılan ve kaybedilen abone,
+    paylaşım, beğeni ve yorum sayıları) haftada bir okur ve bunları <code>Milesia_Veri</code> adlı haftalık özet
+    tabloya yazar. Uygulama başka kanallara erişmez. Okunan veriler kanal sahibinin bilgisayarında ve bu özet tabloda saklanır.</p>
     <p>Uygulamayı kullanan kişi <a href="https://www.youtube.com/t/terms">YouTube Hizmet Şartları</a>'na bağlı
     olmayı kabul eder. Google'ın verileri nasıl işlediği
     <a href="http://www.google.com/policies/privacy">Google Gizlilik Politikası</a>'nda anlatılır.</p>
@@ -61,21 +65,22 @@
     Erişim anahtarı yalnızca kanal sahibinin bilgisayarında saklanır.</p>
     <p>Instagram videoyu yalnızca bir internet adresinden alabildiği için her Reels, yayından birkaç dakika önce
     uygulamanın kendi Drive klasörüne yüklenir, bağlantıya sahip olanların görebileceği şekilde paylaşılır ve
-    yayından hemen sonra silinir. Videolara yapay zekâ ile üretildikleri belirtilerek yayınlanır.</p>
+    yayından hemen sonra kalıcı olarak silinir. Videolara yapay zekâ ile üretildikleri belirtilerek yayınlanır.</p>
 
     <h2>5. Verilerin kullanımı</h2>
     <p>İndirilen paketler yalnızca Milesia videolarını üretmek için kullanılır. Yedekler, uygulamanın
-    ayarlarını kaybetmemek için saklanır. Video sayıları yalnızca kanal sahibine rapor göstermek, yorumlar yalnızca
-    kanal sahibine gösterilip cevaplanmak için kullanılır. Google kullanıcı verileri reklam, profil çıkarma, satış ya da
-    başka bir amaçla kullanılmaz.</p>
+    ayarlarını kaybetmemek için saklanır. Video sayıları ve kanal istatistikleri yalnızca kanal sahibine rapor
+    göstermek ve içerik planlamasına yardımcı olmak, yorumlar yalnızca kanal sahibine gösterilip cevaplanmak için
+    kullanılır. Google kullanıcı verileri reklam, profil çıkarma, satış ya da başka bir amaçla kullanılmaz.</p>
 
     <h2>6. Saklama ve silme</h2>
     <p>İndirilen paketler ve üretilen dosyalar yalnızca kanal sahibinin bilgisayarında saklanır.
     Google Drive erişim izni bilgisayardaki uygulamada şifreli olarak, YouTube erişim anahtarı ise yalnızca kanal sahibinin
     bilgisayarındaki bir ayar dosyasında tutulur. Uygulama çerez ya da benzeri bir izleme teknolojisi kullanmaz. Yayınlanan haftaların ara
     dosyaları 30 gün sonra silinir; bitmiş videolar saklanır. Drive'daki yedeklerin yalnızca son 8 tanesi
-    tutulur. Yorumların metni ve yazan kişinin adı en fazla 30 gün saklanır; cevap kayıtlarında yalnızca yorumun
-    kimliği ve gönderilen cevap tutulur.</p>
+    tutulur; yedeklerde istatistiklerden yalnızca sayılar bulunur, yorum metinleri yedeğe girmez. Haftalık özet tablo
+    kanal sahibinin Drive'ında durur ve her hafta yeniden yazılır. Yorumların metni ve yazan kişinin adı en fazla
+    30 gün saklanır; cevap kayıtlarında yalnızca yorumun kimliği ve gönderilen cevap tutulur.</p>
 
     <h2>7. Paylaşım</h2>
     <p>Google kullanıcı verileri satılmaz ve reklam amacıyla kimseyle paylaşılmaz. Videoları üretmek için
@@ -91,7 +96,9 @@
     metinleri ve zaten herkese açık olan yorum metinleri gönderilir; kişisel ya da gizli bilgi gönderilmez.</p>
 
     <h2>8. Verilere kimler erişir?</h2>
-    <p>Verilere yalnızca kanal sahibi erişir.</p>
+    <p>Verilere yalnızca kanal sahibi erişir. Haftalık özet tablo, kanal sahibinin içerik planlamasında kullandığı
+    kendi ikinci Google hesabıyla yalnızca görüntüleme izniyle paylaşılır; kanal sahibi bu tabloyu içerik
+    planlamasında kullandığı yapay zekâ asistanına (Anthropic Claude) okutabilir.</p>
 
     <h2>9. Erişimi geri alma</h2>
     <p>Uygulamanın Google hesabına erişimi istenildiği an
@@ -112,7 +119,7 @@
 
   <section id="en" lang="en">
     <h1>Privacy Policy</h1>
-    <p class="tarih">Last updated: 30 October 2026</p>
+    <p class="tarih">Last updated: 2 November 2026</p>
 
     <h2>1. Scope</h2>
     <p>This policy covers “Milesia n8n”, the automation app used to produce the Milesia YouTube channel.
@@ -126,8 +133,9 @@
       download the content packages named <code>paket_haftaNN.json</code> in the
       <code>Milesia/paketler</code> folder; it does not open any other files.</li>
       <li><code>drive.file</code>: create and edit only the folders and files the app itself created
-      (<code>Milesia</code>, <code>Milesia/paketler</code>, <code>Milesia/yedek</code>, the backup files and the
-      temporary video copies used for Instagram publishing): create, share and delete.</li>
+      (<code>Milesia</code>, <code>Milesia/paketler</code>, <code>Milesia/yedek</code>, the backup files, the
+      temporary video copies used for Instagram publishing and the weekly summary sheet <code>Milesia_Veri</code>):
+      create, edit, share and delete.</li>
     </ul>
 
     <h2>3. YouTube</h2>
@@ -139,8 +147,11 @@
     been published yet; read the counts of the channel and its videos (subscribers, views, likes and comment counts)
     to show the channel owner a daily report; and read the comments on the channel's videos, show them to the channel
     owner via Telegram, and post to a comment only the reply that the channel owner has separately approved for it.
-    No comment is posted without the channel owner's approval. The app does not access other channels. The data it
-    reads is stored only on the channel owner's computer.</p>
+    No comment is posted without the channel owner's approval. With the <code>yt-analytics.readonly</code> and
+    <code>youtube.readonly</code> scopes it also reads the channel's own statistics (views, watch time, average view
+    duration, subscribers gained and lost, shares, likes and comment counts) once a week and writes them to a weekly
+    summary sheet named <code>Milesia_Veri</code>. The app does not access other channels. The data it reads is stored
+    on the channel owner's computer and in this summary sheet.</p>
     <p>By using the app, users agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of
     Service</a>. How Google processes data is described in the
     <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
@@ -153,13 +164,13 @@
     that the channel owner has separately approved for it). It does not access messages or other accounts. The access
     token is stored only on the channel owner's computer.</p>
     <p>Because Instagram can only fetch a video from a web address, each Reel is uploaded to the app's own Drive
-    folder a few minutes before publishing, shared with anyone who has the link, and deleted right after
+    folder a few minutes before publishing, shared with anyone who has the link, and permanently deleted right after
     publishing. Videos are published with a label stating that they were made with AI.</p>
 
     <h2>5. How the data is used</h2>
     <p>Downloaded packages are used only to produce Milesia videos. Backups are kept so the app's
-    settings are not lost. Video counts are used only to show the channel owner a report, and comments only to
-    show them to the channel owner and reply to them. Google user data is not used for advertising, profiling, sale or any
+    settings are not lost. Video counts and channel statistics are used only to show the channel owner a report and
+    to help with content planning, and comments only to show them to the channel owner and reply to them. Google user data is not used for advertising, profiling, sale or any
     other purpose.</p>
 
     <h2>6. Storage and deletion</h2>
@@ -168,7 +179,8 @@
     stored only in a settings file on the channel owner's computer. The app does not use cookies or similar
     tracking technologies. Intermediate files of
     published weeks are deleted after 30 days; finished videos are kept. Only the latest 8 backups are
-    kept in Drive. Comment texts and commenter names are kept for at most 30 days; the reply log keeps only the
+    kept in Drive; backups contain only the numbers from the statistics, and comment texts are not backed up. The
+    weekly summary sheet stays in the channel owner's Drive and is rewritten every week. Comment texts and commenter names are kept for at most 30 days; the reply log keeps only the
     comment ID and the reply that was posted.</p>
 
     <h2>7. Sharing</h2>
@@ -185,7 +197,9 @@
     this service; no personal or confidential information is sent.</p>
 
     <h2>8. Who can access the data?</h2>
-    <p>Only the channel owner.</p>
+    <p>Only the channel owner. The weekly summary sheet is shared view-only with the channel owner's own second
+    Google account used for content planning; the channel owner may have the AI assistant they use for content
+    planning (Anthropic Claude) read this sheet.</p>
 
     <h2>9. Revoking access</h2>
     <p>The app's access to the Google account can be removed at any time on the
